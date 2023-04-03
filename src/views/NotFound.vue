@@ -14,12 +14,10 @@ export default defineComponent({
 </script>
 
 <template>
-<v-row>
-    <v-spacer/>
-    <v-col align="center">
-        <h1>The page has not been found :(</h1>
+<v-row class="d-flex align-center justify-center">
+    <v-col class="d-flex align-center justify-center" cols="12" md="6">
+        <h1>The page you're looking for cannot be found :(</h1>
     </v-col>
-    <v-spacer/>
 </v-row>
 </template>
 
