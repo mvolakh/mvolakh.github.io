@@ -19,21 +19,21 @@ export default defineComponent({
         return { bg }
     }
 })
-
 </script>
 
 <template>
 <v-app>
     <Header />
     <v-parallax :src="bg">
-        <v-main>
-            <router-view />
-        </v-main>
-        <!-- <Footer /> -->
+    <v-main>
+        <router-view v-slot="{ Component, route }">
+            <transition name="fade" :key="route" mode="out-in">
+                <div><component :is="Component" /></div>
+            </transition>
+        </router-view>
+    </v-main>
     </v-parallax>
-
 </v-app>
-
 </template>
 
 <style scoped>
