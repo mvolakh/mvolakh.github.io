@@ -6,7 +6,7 @@ import Home from './views/Home.vue'
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 
-import bg from './assets/bg1.png'
+import bg from './assets/bg4.png'
 
 export default defineComponent({
     name: 'App',
@@ -25,12 +25,13 @@ export default defineComponent({
 <template>
 <v-app>
     <Header />
-    <v-main>
-        <v-parallax>
+    <v-parallax :src="bg">
+        <v-main>
             <router-view />
-        </v-parallax>
-    </v-main>
-    <Footer />
+        </v-main>
+        <!-- <Footer /> -->
+    </v-parallax>
+
 </v-app>
 
 </template>
