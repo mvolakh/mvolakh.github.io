@@ -43,7 +43,7 @@ export default defineComponent({
 </script>
 
 <template>
-<v-container class="d-flex justify-center" >
+<v-container>
   <v-row class="d-flex justify-center mt-5">
     <v-col cols="12" lg="6">
       <v-sheet class="pa-2 ma-2">
