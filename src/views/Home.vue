@@ -1,43 +1,21 @@
 <script lang="ts">
-import { ref, defineComponent, reactive, toRefs } from 'vue'
+import { ref, defineComponent, reactive, toRefs, PropType } from 'vue'
+
+import TechnologyType from '../types/TechnologyType'
 
 import avatar from '../assets/avatar.png'
-
-interface Technology {
-  name: string;
-  desc: string; 
-  img: string;
-}
 
 export default defineComponent({
     name: 'Home',
     components: {},
+    props: {
+      technologies: {
+        required: true,
+        type: Array as PropType<TechnologyType[]>
+      }
+    },
     setup() {
-      const technologies = ref<Technology[]>([
-        {
-          name: 'Typescript',
-          desc: '',
-          img: 'mdi-language-typescript'
-        },
-        {
-          name: 'Node + Express.js',
-          desc: '', 
-          img: 'mdi-nodejs'
-        },
-        {
-          name: 'MongoDB/SQL',
-          desc: '',
-          img: 'mdi-database'
-        },
-        {
-          name: 'Vue3',
-          desc: 'Working with CompositionAPI. Mostly using Vuetify as a frontend library.',
-          img: 'mdi-vuejs'
-        }
-      ]);
-
-
-      return { avatar, technologies }
+      return { avatar }
     }
 })
 </script>
@@ -47,7 +25,7 @@ export default defineComponent({
   <v-row class="d-flex justify-center mt-5">
     <v-col cols="12" lg="6">
       <v-sheet class="pa-2 ma-2">
-        <div class="d-flex align-center">
+        <div class="d-flex align-center text-justify">
           <div>
             <h1>Hey!</h1>
             <p>I am a <b>3rd year BSc Computer Science student</b> at <a href="https://vu.nl/en">Vrije Universiteit Amsterdam</a>.</p>
