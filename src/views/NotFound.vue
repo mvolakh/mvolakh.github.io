@@ -3,13 +3,7 @@ import { ref, defineComponent, reactive, toRefs } from 'vue'
 
 export default defineComponent({
     name: 'NotFound',
-    components: {},
-    setup() {
-      const count = ref<Number>(0)
-      const state = reactive({})
-
-      return { ...toRefs(state) }
-    }
+    components: {}
 })
 </script>
 
