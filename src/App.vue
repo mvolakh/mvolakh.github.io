@@ -45,9 +45,9 @@ export default defineComponent({
     <Header />
     <v-parallax :src="bg">
     <v-main>
-        <router-view v-slot="{ Component, route }" :technologies="technologies">
-            <transition name="fade" :key="route" mode="out-in">
-                <div><component :is="Component" /></div>
+        <router-view v-slot="{ Component }" :technologies="technologies">
+            <transition name="fade" mode="out-in">
+                <component :is="Component" />
             </transition>
         </router-view>
     </v-main>
@@ -56,4 +56,12 @@ export default defineComponent({
 </template>
 
 <style scoped>
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
 </style>
