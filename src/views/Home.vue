@@ -3,10 +3,13 @@ import { ref, defineComponent, reactive, toRefs, PropType } from 'vue'
 
 import TechnologyType from '../types/TechnologyType'
 
+import Socials from '../components/Socials.vue'
+
 import avatar from '../assets/avatar.png'
 
 export default defineComponent({
     name: 'Home',
+    components: { Socials },
     props: {
       technologies: {
         required: true,
@@ -52,10 +55,7 @@ export default defineComponent({
         </div>
         <v-row class="d-flex justify-center">
             <v-col class="d-flex justify-center" cols="12" md="6">
-              <v-btn density="comfortable" icon="mdi-file-document" class="mr-4" href=""></v-btn>
-              <v-btn density="comfortable" icon="mdi-linkedin" class="mr-4" href="https://www.linkedin.com/in/mvolakh/"></v-btn>
-              <v-btn density="comfortable" icon="mdi-github" class="mr-4" href="https://github.com/mvolakh"></v-btn>
-              <v-btn density="comfortable" icon="mdi-email" href="mailto:m.volakh@gmail.com"></v-btn>
+              <Socials />
             </v-col>
         </v-row>
       </v-sheet>
