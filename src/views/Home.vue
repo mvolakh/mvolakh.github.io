@@ -29,7 +29,7 @@ export default defineComponent({
             <h1>Hey!</h1>
             <p>I am a <b>3rd year BSc Computer Science student</b> at <a href="https://vu.nl/en">Vrije Universiteit Amsterdam</a>.</p>
             <br>
-            <p>You can find my <b><a href="">CV</a></b> and more information about me <b><router-link :to="{name: 'About'}">here</router-link></b>.</p>
+            <p>You can find my <b><a href="https://github.com/mvolakh/mvolakh.github.io/raw/master/docs/cv.pdf">CV</a></b> and more information about me <b><router-link :to="{name: 'About'}">here</router-link></b>.</p>
             <br>
             <p>I'm currently looking for an <b>Internship/Junior Fullstack/Backend</b> position.</p>
             <br>
