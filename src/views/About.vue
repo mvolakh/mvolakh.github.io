@@ -7,7 +7,6 @@ import photo from '../assets/photo.png'
 
 export default defineComponent({
     name: 'About',
-    components: {},
     props: {
       technologies: {
         required: true,

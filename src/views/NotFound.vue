@@ -2,8 +2,7 @@
 import { ref, defineComponent, reactive, toRefs } from 'vue'
 
 export default defineComponent({
-    name: 'NotFound',
-    components: {}
+    name: 'NotFound'
 })
 </script>
 

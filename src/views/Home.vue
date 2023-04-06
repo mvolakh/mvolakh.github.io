@@ -7,7 +7,6 @@ import avatar from '../assets/avatar.png'
 
 export default defineComponent({
     name: 'Home',
-    components: {},
     props: {
       technologies: {
         required: true,
