@@ -29,6 +29,7 @@ export default defineComponent({
       <v-sheet class="pa-2 ma-2">
         <div class="d-flex align-center text-justify">
           <div>
+            <b style="color: red;">A new, completely redesigned website version is coming up soon😊 (upd: Feb 13, 2024)</b>
             <h1>Hey!</h1>
             <p>I am a <b>3rd year BSc Computer Science student</b> at <a href="https://vu.nl/en">Vrije Universiteit Amsterdam</a>.</p>
             <br>
