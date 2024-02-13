@@ -6,4 +6,4 @@ interface CourseType {
   desc: string; 
 }
   
-  export default CourseType;
+export default CourseType;
