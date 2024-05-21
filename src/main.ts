@@ -15,11 +15,11 @@ const vuetify = createVuetify({
     components,
     directives,
     icons: {
-      defaultSet: 'mdi',
-      aliases,
-      sets: {
-        mdi,
-      }
+        defaultSet: 'mdi',
+        aliases,
+        sets: {
+            mdi,
+        }
     }
   })
 
