@@ -1,21 +1,11 @@
-<script lang="ts">
-import { defineComponent, ref } from 'vue';
-
+<script setup lang="ts">
 import Home from './views/Home.vue'
-
-export default defineComponent({
-    name: 'App',
-    components: { Home },
-    setup() {
-        return {}
-    }
-})
 </script>
 
 <template>
 <v-app>
     <v-main style="background-color: black;">
-        <Home/>
+    <Home />
     </v-main>
 </v-app>
 </template>
