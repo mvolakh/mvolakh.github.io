@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import Header from '../components/Header.vue';
-import About from '../components/About.vue';
-import Skills from '../components/Skills.vue';
-import Projects from '../components/Projects.vue';
-import Footer from '../components/Footer.vue';
-import { useDisplay } from 'vuetify';
+// import Header from '../components/Header.vue';
+// import About from '../components/About.vue';
+// import Skills from '../components/Skills.vue';
+// import Projects from '../components/Projects.vue';
+// import Footer from '../components/Footer.vue';
+// import { useDisplay } from 'vuetify';
 
-const { mobile } = useDisplay();
+// const { mobile } = useDisplay();
 </script>
 
 <template>
@@ -35,9 +35,9 @@ const { mobile } = useDisplay();
 </template>
 
 <style scoped>
-.v-fab {
+/* .v-fab {
     position: fixed;
     bottom: 8%;
     right: 5%;
-}
+} */
 </style>
