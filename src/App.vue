@@ -5,7 +5,7 @@ import Home from './views/Home.vue'
 <template>
 <v-app>
     <v-main style="background-color: black;">
-    <Home />
+        <Home />
     </v-main>
 </v-app>
 </template>

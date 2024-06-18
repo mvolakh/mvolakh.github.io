@@ -1,43 +1,48 @@
 <script setup lang="ts">
-// import Header from '../components/Header.vue';
-// import About from '../components/About.vue';
-// import Skills from '../components/Skills.vue';
-// import Projects from '../components/Projects.vue';
-// import Footer from '../components/Footer.vue';
+import About from '../components/About.vue';
+import Skills from '../components/Skills.vue';
+import Languages from '../components/Languages.vue';
+import Projects from '../components/Projects.vue';
+import Footer from '../components/Footer.vue';
+import Cat from '../components/Cat.vue'
 // import { useDisplay } from 'vuetify';
 
 // const { mobile } = useDisplay();
 </script>
 
 <template>
-<!-- <v-container>
+<v-container>
     <v-row>
         <v-spacer></v-spacer>
-        <v-col id="wrapper" cols="12" lg="8" md="10">
+        <!-- <v-col id="wrapper" cols="12" lg="8" md="10"> -->
+        <v-col id="wrapper" cols="12" xl="8">
             <About/>
             <Skills/>
+            <Languages/>   
             <Projects/>
         </v-col>
         <v-spacer></v-spacer>
     </v-row>
 </v-container>
 <Footer/>
-<v-fab color="white" variant="outlined" icon="mdi-lightbulb" v-show="!mobile"></v-fab> -->
-<v-container fluid class="fill-height">
-    <v-row>
-    <v-col class="d-flex flex-column justify-center align-center">
-        <h1>¯\_(ツ)_/¯</h1>
-        <p>New version is coming soon</p>
-        <p>29.05</p>
-    </v-col>
-    </v-row>
-</v-container>
+<Cat/>
+
+<!-- <v-fab color="white" variant="outlined" icon="mdi-lightbulb" v-show="!mobile"></v-fab> -->
 </template>
 
 <style scoped>
-/* .v-fab {
+.v-fab {
     position: fixed;
     bottom: 8%;
     right: 5%;
-} */
+}
+
+.cat {
+    position: fixed;
+    bottom: 3%;
+    left: 3%;
+    height: 36px;
+    width: 36px;
+    z-index: 1000;
+}
 </style>
