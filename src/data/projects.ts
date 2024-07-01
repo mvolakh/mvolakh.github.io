@@ -30,12 +30,13 @@ const projects : Project[] = [
         keypoints: [
             "Implemented a REST API using Node.js and Express.js for historical data retrieval and transfer",
             "Integrated data from MQTT streams with the WebSocket server to enable real-time communication",
-            "Optimized MongoDB database performance to efficiently handle high volumes of data, processing a vast number of incoming packets per second",
-            "Processed historical data collected over one year to create an abundant dataset for future use",
+            "Transformed historical data collected over one year to create an abundant dataset for future use",
+            "Created a data pipeline to efficiently handle high volumes of live data, processing a vast number of incoming packets per second",
+            "Optimized MongoDB database performance to align with the project's specific needs and usage patterns",
             "Developed and optimized multiple ML time-series forecasting RNN models to predict occupancy patterns",
             "Designed a user-friendly UI to enhance accessibility and usability in terms of occupancy visualization",
             "Made the system's API suitable to be integrated with the university reservation system (hasn't been implemented due to privacy concerns)",
-            "Created a wide variety of tests designed to verify the validity of the API "
+            "Created a wide variety of tests designed to verify the validity of the API"
         ],
         technologies: [
             "Node.js",
@@ -73,7 +74,8 @@ const projects : Project[] = [
             "Designed an API for communication between the frontend and backend of the system",
             "Developed a user authentication system with role-based privileges, providing security and user management",
             "Added a file upload functionality, allowing users to add images and documents to their listings",
-            "Implemented custom sorting functionalities, enabling users to sort property listings based on various criteria such as price, location, and property type"
+            "Integrated custom sorting functionalities, enabling users to sort property listings based on various criteria such as price, location, and property type",
+            "Established an SMTP mailing service ensuring delivery of automated email notifications"
         ],
         technologies: [
             "Node.js",
@@ -158,7 +160,8 @@ const projects : Project[] = [
         keypoints: [
             "Designed both the frontend and the backend of the application",
             "Provided simple password based authentication and encryption",
-            "Implemented custom sorting and search functionalities in order to filter charity organizations based on a number of criteria"
+            "Implemented custom sorting and search functionalities in order to filter charity organizations based on a number of criteria",
+            "Configured an SMTP mailing service using Nodemailer for sending automated email notifications"
         ],
         technologies: [
             "Node.js",
