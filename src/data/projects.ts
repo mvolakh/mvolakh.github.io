@@ -15,7 +15,8 @@ const projects : Project[] = [
             "Implemented cron jobs to fetch and process game data using Webdriver, and set up regular automated database backups to maintain data consistency and availability",
             "Integrated internalization (i18n) into the platform, enabling users to switch between multiple languages",
             "Configured Google Analytics to track user interactions, providing insights into user behavior and supporting data-driven platform improvements. Added a cookie consent banner to ensure compliance with GDPR regulations for EU users",
-            "Administered a Webdriver-based solution to fetch large-scale game data on a scheduled basis, processing the data for integration into the platform's analytics and ranking system"
+            "Administered a Webdriver-based solution to fetch large-scale game data on a scheduled basis, processing the data for integration into the platform's analytics and ranking system",
+            "Created a Discord bot integration to track issues and generate reports, which currently serves as an internal monitoring tool"
         ],
         technologies: [
             "Node.js",
